@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Education Egypt — الإعلان الترويجي الرسمي (1080p HD)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: "Cairo", "Noto Kufi Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+      background: radial-gradient(circle at 20% 20%, #102555 0%, #070d1f 55%, #040712 100%);
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+    }
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      font-weight: 700;
+      direction: ltr;
+      text-align: right;
+    }
+    h1 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease, filter 0.15s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-1px); filter: brightness(1.08); }
+    .btn-primary {
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(34, 197, 94, 0.35);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .player-shell {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000000;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(251, 191, 36, 0.14);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      background: #000;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+      color: #94a3b8;
+      padding: 0 4px;
+    }
+    .specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      direction: ltr;
+    }
+    .spec-item {
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <div class="brand">
+        <span class="eyebrow">INTERNATIONAL EDUCATION EGYPT</span>
+        <h1>الإعلان الترويجي الرسمي للمنصة (1080p HD)</h1>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="/commercial/international_education_egypt_commercial.mp4" download="international_education_egypt_commercial.mp4">
+          تحميل الفيديو MP4 (جودة عالية 1080p)
+        </a>
+        <a class="btn btn-secondary" href="/">
+          العودة للمنصة التعليمية
+        </a>
+      </div>
+    </div>
+
+    <div class="player-shell">
+      <video
+        id="commercial-video"
+        controls
+        playsinline
+        preload="auto"
+        poster="/commercial/poster.jpg"
+      >
+        <source src="/commercial/international_education_egypt_commercial.mp4" type="video/mp4" />
+        متصفحك لا يدعم تشغيل فيديو MP4 مباشرة. يمكنك استخدام زر التحميل بالأعلى.
+      </video>
+    </div>
+
+    <div class="meta">
+      <span>تصوير حقيقي من داخل المنصة التعليمية مع المؤثرات الصوتية الأصلية • عربي + إنجليزي</span>
+      <div class="specs">
+        <span class="spec-item">1920 × 1080 (16:9)</span>
+        <span>•</span>
+        <span class="spec-item">30 FPS H.264 Main@4.0</span>
+        <span>•</span>
+        <span class="spec-item">AAC Stereo</span>
+        <span>•</span>
+        <span class="spec-item">42.5s</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
