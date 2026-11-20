@@ -8,7 +8,8 @@ import {
   Sparkles, 
   Settings,
   Volume2,
-  VolumeX
+  VolumeX,
+  LogOut
 } from 'lucide-react';
 import { MAIN_NAV_ITEMS } from '../utils/navigationConfig';
 import { soundEffects, useSoundSettings } from '../utils/soundEffects';
@@ -198,7 +199,19 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Left side (RTL): Actions, Controls & Student Profile */}
           <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-            
+
+            {/* Logout (handled by the Vercel login-gate middleware); first in the row so it stays on-screen when the header overflows */}
+            <a
+              href="/auth/logout"
+              style={{ textDecoration: 'none' }}
+              className="flex items-center gap-1 p-2 sm:px-2.5 sm:py-1.5 bg-slate-100 hover:bg-red-50 text-slate-700 hover:text-red-700 border border-slate-300/80 rounded-2xl text-xs font-bold transition-all shadow-2xs cursor-pointer active:scale-95 shrink-0"
+              title="تسجيل الخروج"
+              aria-label="تسجيل الخروج"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span className="hidden xl:inline">خروج</span>
+            </a>
+
             {/* Font Size Adjuster Control */}
             {setFontSize && (
               <div 
